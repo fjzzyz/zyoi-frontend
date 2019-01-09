@@ -1,7 +1,7 @@
 <template>
   <div id="header">
     <Menu theme="light" mode="horizontal" @on-select="handleRoute" :active-name="activeMenu" class="oj-menu">
-      <div class="logo"><span>{{website.website_name}}</span></div>
+      <div class="logo"><img class="logo-image" src="https://wx3.sinaimg.cn/mw690/adb5e377ly1fm3n3zwfhgj20i40hstav.jpg" width="30px"><span>{{website.website_name}}</span></div>
       <Menu-item name="/">
         <Icon type="home"></Icon>
         {{$t('m.Home')}}
@@ -140,6 +140,12 @@
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
     .oj-menu {
       background: #fdfdfd;
+    }
+    
+    .logo-image {
+        border-radius: 50%;
+        margin-right: 10px;
+        vertical-align: middle;
     }
 
     .logo {
